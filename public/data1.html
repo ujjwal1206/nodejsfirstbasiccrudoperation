@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    Title:<input type="text" name="i1" id="title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Content:
+    <input type="text" name="i2" id="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" onclick="abc()">
+    <ol id="o1"></ol>
+    <script>
+        function abc() {
+            var list = document.getElementById("o1");
+            var a = document.getElementById("title").value;
+            var b = document.getElementById("content").value;
+            list.innerHTML += "<li>" + a + "   " + b + "</li>";
+        }
+    </script>
+</body>
+
+</html>
